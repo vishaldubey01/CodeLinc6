@@ -11,6 +11,9 @@
 		4811279623400C1B0001BB8A /* EventsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811279523400C1B0001BB8A /* EventsDetail.swift */; };
 		4811279923400C620001BB8A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811279823400C620001BB8A /* MapView.swift */; };
 		4811279B23400C880001BB8A /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811279A23400C880001BB8A /* CategoryRow.swift */; };
+		8D655ED8234016C7003C4DE7 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655ED7234016C7003C4DE7 /* House.swift */; };
+		8D655EDA234016DB003C4DE7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655ED9234016DB003C4DE7 /* Event.swift */; };
+		8D655EDC234016F3003C4DE7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655EDB234016F3003C4DE7 /* Contact.swift */; };
 		8DE9FE44233FED4700078BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE43233FED4700078BA1 /* AppDelegate.swift */; };
 		8DE9FE46233FED4700078BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE45233FED4700078BA1 /* SceneDelegate.swift */; };
 		8DE9FE48233FED4700078BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE47233FED4700078BA1 /* ContentView.swift */; };
@@ -26,6 +29,9 @@
 		4811279523400C1B0001BB8A /* EventsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetail.swift; sourceTree = "<group>"; };
 		4811279823400C620001BB8A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4811279A23400C880001BB8A /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		8D655ED7234016C7003C4DE7 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		8D655ED9234016DB003C4DE7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8D655EDB234016F3003C4DE7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		8DE9FE40233FED4700078BA1 /* ConnectCorps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectCorps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE9FE43233FED4700078BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE9FE45233FED4700078BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,16 @@
 			path = DashboardViews;
 			sourceTree = "<group>";
 		};
+		8D655ED023401638003C4DE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D655ED7234016C7003C4DE7 /* House.swift */,
+				8D655ED9234016DB003C4DE7 /* Event.swift */,
+				8D655EDB234016F3003C4DE7 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8DE9FE37233FED4700078BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 			children = (
 				8DE9FE43233FED4700078BA1 /* AppDelegate.swift */,
 				8DE9FE45233FED4700078BA1 /* SceneDelegate.swift */,
+				8D655ED023401638003C4DE7 /* Model */,
 				8DE9FE57233FF04700078BA1 /* User Interface */,
 				8DE9FE49233FED4900078BA1 /* Assets.xcassets */,
 				8DE9FE4E233FED4900078BA1 /* LaunchScreen.storyboard */,
@@ -188,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D655EDC234016F3003C4DE7 /* Contact.swift in Sources */,
 				8DE9FE44233FED4700078BA1 /* AppDelegate.swift in Sources */,
+				8D655EDA234016DB003C4DE7 /* Event.swift in Sources */,
 				4811279923400C620001BB8A /* MapView.swift in Sources */,
 				8DE9FE46233FED4700078BA1 /* SceneDelegate.swift in Sources */,
 				4811279223400A280001BB8A /* HouseDetail.swift in Sources */,
@@ -196,6 +215,7 @@
 				8DE9FE59233FF08B00078BA1 /* CCTabView.swift in Sources */,
 				4811279B23400C880001BB8A /* CategoryRow.swift in Sources */,
 				4811279623400C1B0001BB8A /* EventsDetail.swift in Sources */,
+				8D655ED8234016C7003C4DE7 /* House.swift in Sources */,
 				8DE9FE48233FED4700078BA1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
