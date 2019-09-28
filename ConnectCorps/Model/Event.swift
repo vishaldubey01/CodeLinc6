@@ -29,3 +29,6 @@ extension Event: Equatable {
         return lhs.id == rhs.id
     }
 }
+
+// MARK: - Identifiable
+extension Event: Identifiable { }

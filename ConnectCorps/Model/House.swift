@@ -30,3 +30,6 @@ extension House: Equatable {
         return lhs.id == rhs.id
     }
 }
+
+// MARK: - Identifiable
+extension House: Identifiable { }
