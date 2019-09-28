@@ -6,6 +6,7 @@
 //  Copyright © 2019 Harish Yerra. All rights reserved.
 //
 
+import SwiftUI
 import Foundation
 
 /// Represents a contact that a veteran can use to get help.

@@ -16,7 +16,7 @@ struct House {
     /// The name of the house.
     var name: String
     /// The image for the house.
-    var image: Image
+    //var image: Image
     /// The contact for the house.
     var phoneNumber: String
     /// The location for the house.

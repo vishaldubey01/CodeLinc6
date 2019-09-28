@@ -18,7 +18,7 @@ struct Event {
     /// The location of the event.
     var location: CLLocation
     /// The time of the event.
-    var time: Date
+    //var time: Date
     /// The cost to attend the event.
     var cost: Decimal
 }
