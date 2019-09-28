@@ -10,8 +10,12 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        VStack {
-            CCTabView()
+        NavigationView {
+            List {
+                CategoryRow(houses: House, events: Event)
+                    .listRowInsets(EdgeInsets())
+            }
+            .navigationBarTitle("Main")
         }
     }
 }
