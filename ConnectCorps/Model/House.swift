@@ -16,11 +16,19 @@ struct House {
     /// The name of the house.
     var name: String
     /// The image for the house.
-    var image: Image
+    var image: UIImage
     /// The contact for the house.
     var phoneNumber: String
     /// The location for the house.
-    var location: CLLocation
+    var location: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case image
+        case phoneNumber = "number"
+        case location = "address"
+    }
 }
 
 // MARK: - Equatable
@@ -33,3 +41,21 @@ extension House: Equatable {
 
 // MARK: - Identifiable
 extension House: Identifiable { }
+
+// MARK: - Decodable
+extension House: Decodable {
+    enum NetworkingError: Error {
+        case noData
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(Int.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        let imageData = try values.decode(Data.self, forKey: .image)
+        guard let image = UIImage(data: imageData) else { throw NetworkingError.noData }
+        self.image = image
+        phoneNumber = try values.decode(String.self, forKey: .phoneNumber)
+        location = try values.decode(String.self, forKey: .location)
+    }
+}

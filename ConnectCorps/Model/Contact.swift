@@ -16,4 +16,10 @@ struct Contact {
     var description: String
     /// The phone number of the contact.
     var phoneNumber: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case name
+        case description
+        case phoneNumber = "PhoneNumber"
+    }
 }
