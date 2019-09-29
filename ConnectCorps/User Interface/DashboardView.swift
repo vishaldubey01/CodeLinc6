@@ -10,6 +10,27 @@ import SwiftUI
 import CoreLocation
 
 struct DashboardView: View {
+    var body: some View {
+        DashboardViewWrapper()
+    }
+}
+
+struct DashboardViewWrapper: UIViewControllerRepresentable {
+    typealias UIViewControllerType = DashboardTableViewController
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<DashboardViewWrapper>) -> DashboardTableViewController {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: DashboardTableViewController.identifier) as! DashboardTableViewController
+        return vc
+    }
+    
+    func updateUIViewController(_ uiViewController: DashboardTableViewController, context: UIViewControllerRepresentableContext<DashboardViewWrapper>) {
+        
+    }
+    
+}
+
+/*
+struct DashboardView: View {
     
     let houses: [House] = [
         House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 25.2048, longitude: 55.2708)),
@@ -78,3 +99,4 @@ struct DashboardView_Previews: PreviewProvider {
         DashboardView()
     }
 }
+*/

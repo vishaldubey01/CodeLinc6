@@ -17,6 +17,9 @@
 		8D655F3923405AA4003C4DE7 /* ContactRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655F3823405AA4003C4DE7 /* ContactRowItemView.swift */; };
 		8D655F3E234065F3003C4DE7 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655F3D234065F3003C4DE7 /* HouseView.swift */; };
 		8D655F40234069BC003C4DE7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D655F3F234069BC003C4DE7 /* MapView.swift */; };
+		8DE8D08723407B23000C827F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE8D08623407B23000C827F /* Main.storyboard */; };
+		8DE8D08923407BED000C827F /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE8D08823407BED000C827F /* DashboardTableViewController.swift */; };
+		8DE8D08B23407CBE000C827F /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE8D08A23407CBE000C827F /* DashboardTableViewCell.swift */; };
 		8DE9FE44233FED4700078BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE43233FED4700078BA1 /* AppDelegate.swift */; };
 		8DE9FE46233FED4700078BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE45233FED4700078BA1 /* SceneDelegate.swift */; };
 		8DE9FE48233FED4700078BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9FE47233FED4700078BA1 /* ContentView.swift */; };
@@ -37,6 +40,9 @@
 		8D655F3823405AA4003C4DE7 /* ContactRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowItemView.swift; sourceTree = "<group>"; };
 		8D655F3D234065F3003C4DE7 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
 		8D655F3F234069BC003C4DE7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8DE8D08623407B23000C827F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8DE8D08823407BED000C827F /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
+		8DE8D08A23407CBE000C827F /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		8DE9FE40233FED4700078BA1 /* ConnectCorps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectCorps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE9FE43233FED4700078BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE9FE45233FED4700078BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 			children = (
 				8DE9FE47233FED4700078BA1 /* ContentView.swift */,
 				8DE9FE5A233FFD1300078BA1 /* DashboardView.swift */,
+				8DE8D08823407BED000C827F /* DashboardTableViewController.swift */,
+				8DE8D08A23407CBE000C827F /* DashboardTableViewCell.swift */,
+				8DE8D08623407B23000C827F /* Main.storyboard */,
 				4811279C23400C910001BB8A /* DashboardViews */,
 				8D655F3D234065F3003C4DE7 /* HouseView.swift */,
 				8D655F3F234069BC003C4DE7 /* MapView.swift */,
@@ -193,6 +202,7 @@
 				8DE9FE50233FED4900078BA1 /* LaunchScreen.storyboard in Resources */,
 				8DE9FE4D233FED4900078BA1 /* Preview Assets.xcassets in Resources */,
 				8DE9FE4A233FED4900078BA1 /* Assets.xcassets in Resources */,
+				8DE8D08723407B23000C827F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,11 +215,13 @@
 			files = (
 				8D655EDC234016F3003C4DE7 /* Contact.swift in Sources */,
 				8DE9FE44233FED4700078BA1 /* AppDelegate.swift in Sources */,
+				8DE8D08B23407CBE000C827F /* DashboardTableViewCell.swift in Sources */,
 				8D655F3E234065F3003C4DE7 /* HouseView.swift in Sources */,
 				8D655F3523405669003C4DE7 /* EventsRowItemView.swift in Sources */,
 				8D655EDA234016DB003C4DE7 /* Event.swift in Sources */,
 				8DE9FE46233FED4700078BA1 /* SceneDelegate.swift in Sources */,
 				8D655F3923405AA4003C4DE7 /* ContactRowItemView.swift in Sources */,
+				8DE8D08923407BED000C827F /* DashboardTableViewController.swift in Sources */,
 				8D655F40234069BC003C4DE7 /* MapView.swift in Sources */,
 				8DE9FE5B233FFD1300078BA1 /* DashboardView.swift in Sources */,
 				8D655ED8234016C7003C4DE7 /* House.swift in Sources */,
