@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents a contact that a veteran can use to get help.
-struct Contact {
+struct Contact: Codable {
     /// The name of the contact.
     var name: String
     /// The description of the contact.
