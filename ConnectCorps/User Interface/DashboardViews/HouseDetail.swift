@@ -9,7 +9,10 @@
 import SwiftUI
 
 struct HouseDetail: View {
+    var house: House
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        MapView(coordinate: house.location.coordinate)
+            .frame(height: 300)
     }
 }

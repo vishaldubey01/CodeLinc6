@@ -12,12 +12,18 @@ import CoreLocation
 struct DashboardView: View {
     
     let houseData: [House] = [
+        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100)),
+        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100)),
         House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100))
     ]
     let eventData: [Event] = [
+        Event(id: 3, name: "asdf", location: CLLocation(latitude: 10, longitude: 10), cost: 3.0),
+        Event(id: 3, name: "asdf", location: CLLocation(latitude: 10, longitude: 10), cost: 3.0),
         Event(id: 3, name: "asdf", location: CLLocation(latitude: 10, longitude: 10), cost: 3.0)
     ]
     let contactData: [Contact] = [
+        Contact(name: "Sauren", description: "aslkdjfas", phoneNumber: "239408234"),
+        Contact(name: "Sauren", description: "aslkdjfas", phoneNumber: "239408234"),
         Contact(name: "Sauren", description: "aslkdjfas", phoneNumber: "239408234")
     ]
     
