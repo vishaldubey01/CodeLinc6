@@ -98,6 +98,7 @@
 				8D655EE0234032A9003C4DE7 /* Endpoint.swift */,
 				8D655EE2234032C8003C4DE7 /* APIClient.swift */,
 				8D655EE823403852003C4DE7 /* ConnectCorps */,
+				8D655EE923403873003C4DE7 /* Eventbrite */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -109,6 +110,13 @@
 				8D655EE6234035B5003C4DE7 /* ConnectCorpsClient.swift */,
 			);
 			path = ConnectCorps;
+			sourceTree = "<group>";
+		};
+		8D655EE923403873003C4DE7 /* Eventbrite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Eventbrite;
 			sourceTree = "<group>";
 		};
 		8DE9FE37233FED4700078BA1 = {
