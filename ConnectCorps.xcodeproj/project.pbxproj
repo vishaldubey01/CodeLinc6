@@ -97,10 +97,18 @@
 			children = (
 				8D655EE0234032A9003C4DE7 /* Endpoint.swift */,
 				8D655EE2234032C8003C4DE7 /* APIClient.swift */,
+				8D655EE823403852003C4DE7 /* ConnectCorps */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8D655EE823403852003C4DE7 /* ConnectCorps */ = {
+			isa = PBXGroup;
+			children = (
 				8D655EE423403326003C4DE7 /* ConnectCorpsEndpoint.swift */,
 				8D655EE6234035B5003C4DE7 /* ConnectCorpsClient.swift */,
 			);
-			path = Networking;
+			path = ConnectCorps;
 			sourceTree = "<group>";
 		};
 		8DE9FE37233FED4700078BA1 = {
