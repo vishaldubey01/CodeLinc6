@@ -12,9 +12,9 @@ import CoreLocation
 struct DashboardView: View {
     
     let houses: [House] = [
-        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100)),
-        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100)),
-        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 100, longitude: 100))
+        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 25.2048, longitude: 55.2708)),
+        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 25.2048, longitude: 55.2708)),
+        House(id: 1, name: "address 1", phoneNumber: "407237833", location: CLLocation(latitude: 25.2048, longitude: 55.2708))
     ]
     let events: [Event] = [
         Event(id: 3, name: "asdf", location: CLLocation(latitude: 10, longitude: 10), time: Date(), cost: 3.0),
@@ -28,34 +28,48 @@ struct DashboardView: View {
     ]
     
     var body: some View {
-        List {
-            Section {
-                VStack(alignment: .leading) {
-                    Text("Harish Yerra").font(.title)
-                    Text("Air Force").font(.body)
-                }.padding(5)
-            }
-            Section(header: Text("Houses").font(.headline)) {
-                ForEach(houses) { house in
-                    HouseRowItemView(house: house)
+        VStack {
+            List {
+                Section {
+                    VStack(alignment: .leading) {
+                        Text("Harish Yerra").font(.title)
+                        Text("Air Force").font(.body)
+                    }.padding(5)
                 }
-            }
-            Section(header: Text("Events").font(.headline)) {
-                ForEach(events) { event in
-                    EventsRowItemView(event: event)
+                
+            }.listStyle(GroupedListStyle())
+            
+            List(houses) { house in
+                Section(header: Text("Houses").font(.headline)) {
+                   NavigationLink(destination: HouseView(house: house).navigationBarTitle(house.name)) {
+                        HouseRowItemView(house: house)
+                    }
                 }
-            }
-            Section(header: Text("Contacts").font(.headline)) {
-                ForEach(contacts) { contact in
+            }.listStyle(GroupedListStyle())
+            
+            List(events) {
+                Section(header: Text("Events").font(.headline)) {
+                    ForEach(events) { event in
+                        EventsRowItemView(event: event)
+                    }
+                }
+            }.listStyle(GroupedListStyle())
+            
+            List(contacts) { contact in
+                Section(header: Text("Contacts").font(.headline)) {
                     ContactRowItemView(contact: contact)
                 }
-            }
-            Section(header: Text("Benefits").font(.headline)) {
-                BenefitRowItemView()
-                BenefitRowItemView()
-                BenefitRowItemView()
-            }
-        }.listStyle(GroupedListStyle())
+            }.listStyle(GroupedListStyle())
+            
+            List([0, 1, 2]) { benefit in
+                Section(header: Text("Benefits").font(.headline)) {
+                    BenefitRowItemView()
+                    BenefitRowItemView()
+                    BenefitRowItemView()
+                }
+            }.listStyle(GroupedListStyle())
+        }
+        
     }
 }
 
