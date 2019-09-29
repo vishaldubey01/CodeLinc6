@@ -11,6 +11,8 @@ import Foundation
 
 /// Represents a contact that a veteran can use to get help.
 struct Contact {
+    /// The id of the contact.
+    var id: Int
     /// The name of the contact.
     var name: String
     /// The description of the contact.
@@ -18,3 +20,5 @@ struct Contact {
     /// The phone number of the contact.
     var phoneNumber: String
 }
+
+extension Contact: Identifiable { }

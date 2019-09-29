@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BenefitRowItemView.swift
 //  ConnectCorps
 //
 //  Created by Harish Yerra on 9/28/19.
@@ -8,17 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BenefitRowItemView: View {
     var body: some View {
-        NavigationView {
-            DashboardView()
-            .navigationBarTitle(Text("Dashboard"))
+        HStack {
+            Text("Some Benefit")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BenefitRowItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BenefitRowItemView()
     }
 }
