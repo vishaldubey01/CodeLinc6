@@ -1,4 +1,6 @@
-#Code by Vishal Dubey
+# Code by Vishal Dubey
+# Used a Naive Bayesian Classifier trained using Twitter Datasets
+
 import nltk.classify.util
 import pandas as pd
 from nltk.classify import NaiveBayesClassifier
